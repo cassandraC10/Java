@@ -19,13 +19,8 @@ public class DiaryApp {
         this.email = email;
     }
 
-    public Entry createEntry(String title, String body){
-        return new Entry(title,body);
-    }
-    public void addEntry(Entry entry) {
-        entries.add(entry);
-
-    }
+    public Entry createEntry(String title, String body){return new Entry(title,body);}
+    public void addEntry(Entry entry) { entries.add(entry); }
 
     public int getNumberOfEntries() {
         return entries.size();
@@ -34,6 +29,7 @@ public class DiaryApp {
     public Entry searchEntry(String title) {
         for (Entry entry:entries) {
             if (title.equalsIgnoreCase(entry.getTitle())){
+                System.out.println(entry.getTitle());
                 return entry;
             }
         }

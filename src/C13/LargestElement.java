@@ -6,7 +6,7 @@ import java.util.List;
 
 public class LargestElement {
     public static void main(String[] args) {
-        List<Integer> arrayList = Arrays.asList(1, 2, 3, 4, 5, 6);
+        List<Integer> arrayList = Arrays.asList(1, 2, 3, 4, 7, 6);
         Integer largestElement = 0;
         for (int i = 0; i < arrayList.size(); i++) {
             if (arrayList.get(i) > largestElement)
